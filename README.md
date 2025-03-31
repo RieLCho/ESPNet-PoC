@@ -59,5 +59,8 @@ python src/demo.py --model_path /path/to/asr_model \
 ## 참고사항
 
 - 입력 오디오는 WAV 형식을 권장합니다.
-- 샘플링 레이트는 자동으로 16kHz로 변환됩니다.
+- 샘플링 레이트는 자동으로 16kHz로 변환됩니다. 
+```
+for f in ./data/mika/*.wav; do ffmpeg -i "$f" -ar 16000 -ac 1 "${f%.*}_converted.wav" -y; done
+```
 - 화자 식별 시 기본 유사도 임계값은 0.7입니다.
