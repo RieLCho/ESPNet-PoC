@@ -1,0 +1,19 @@
+[project]
+name = "espnet-poc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "espnet==202412",
+    "espnet-model-zoo>=0.1.7",
+    "librosa>=0.8.1",
+    "numpy==1.23.5",
+    "pandas>=1.2.4",
+    "scikit-learn>=0.24.2",
+    "scipy>=1.6.0",
+    "soundfile>=0.10.3",
+    "torch==2.1.0",
+    "torchaudio==2.1.0",
+    "transformers>=4.5.0",
+]

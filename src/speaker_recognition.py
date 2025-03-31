@@ -13,8 +13,8 @@ class SpeakerRecognition:
             asr_model_path (str): ESPnet ASR 모델 경로
         """
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.speech2text = Speech2Text(
-            asr_model=asr_model_path,
+        self.speech2text = Speech2Text.from_pretrained(
+            "espnet/kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave",
             device=self.device
         )
         self.speaker_embeddings = {}

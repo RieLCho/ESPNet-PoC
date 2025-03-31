@@ -4,10 +4,22 @@
 
 ## 설치 방법
 
+0. python 3.11 준비
+
+```
+pyenv install 3.11
+```
+
 1. 필요한 패키지 설치:
 
 ```bash
-pip install -r requirements.txt
+uv add -r requirements.tsx
+```
+
+or
+
+```
+source .venv/bin/activate && uv pip install --index-strategy unsafe-best-match -r requirements.txt
 ```
 
 2. ESPnet ASR 모델 다운로드:
