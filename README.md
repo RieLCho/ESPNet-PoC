@@ -56,10 +56,16 @@ python src/demo.py --test_audio test/mika/1.wav
 
 # 학습에 사용하지 않은 카즈사 목소리를 테스팅합니다.
 python src/demo.py --test_audio test/kazusa/1.wav
-
 ```
 
 ![프로젝트 이미지](assets/test.png)
+
+```
+# 화자 학습을 하지 않은 데이터, 시로코 목소리를 테스팅합니다.
+python src/demo.py --test_audio test/shiroko/1.wav
+```
+
+![프로젝트 이미지](assets/test_shiroko.png)
 
 ## 디렉토리 구조
 
@@ -78,6 +84,7 @@ python src/demo.py --test_audio test/kazusa/1.wav
 ├── test/                     # 테스트 데이터
 │   ├── kazusa/               # 카즈사 음성 테스트 데이터
 │   └── mika/                 # 미카 음성 테스트 데이터
+│   └── shiroko/              # 시로코 음성 테스트 데이터 (학습하지 않은 데이터)
 ├── pyproject.toml            # 프로젝트 의존성 정의
 ├── convert_to_wav.py         # 영상을 WAV로 변환
 └── speaker_embeddings.pkl    # 저장된 화자 임베딩
