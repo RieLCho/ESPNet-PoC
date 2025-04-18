@@ -47,7 +47,14 @@ python src/demo.py --register_audio data/mika/1.wav --speaker_id mika --test_aud
 - 샘플링 레이트는 자동으로 16kHz로 변환됩니다.
 
 ```
-for f in ./data/mika/*.wav; do ffmpeg -i "$f" -ar 16000 -ac 1 "${f%.*}_converted.wav" -y; done
+> # 기존 임베딩 파일 삭제
+rm speaker_embeddings.pkl
+
+# 모든 화자 음성 파일 등록
+python src/demo.py --register_dir data
+
+# 화자 식별 테스트
+python src/demo.py --test_audio test/1.wav
 ```
 
 - 화자 식별 시 기본 유사도 임계값은 0.7입니다.
