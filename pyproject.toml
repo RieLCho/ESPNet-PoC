@@ -3,7 +3,7 @@ name = "espnet-poc"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
     "espnet==202412",
     "espnet-model-zoo>=0.1.7",
