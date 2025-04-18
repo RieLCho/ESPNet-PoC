@@ -58,3 +58,9 @@ python src/demo.py --test_audio test/1.wav
 ```
 
 - 화자 식별 시 기본 유사도 임계값은 0.7입니다.
+
+uv sync시 portaudio 이슈
+
+> brew install portaudio
+> or
+> apt-get install portaudio19-dev python-all-dev
