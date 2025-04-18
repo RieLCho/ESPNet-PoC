@@ -4,7 +4,6 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser(description="화자 인식 시스템 데모")
-    parser.add_argument("--model_path", required=True, help="ESPnet ASR 모델 경로")
     parser.add_argument("--register_audio", help="등록할 화자의 음성 파일 경로")
     parser.add_argument("--speaker_id", help="등록할 화자 ID")
     parser.add_argument("--test_audio", help="테스트할 음성 파일 경로")
@@ -12,7 +11,7 @@ def main():
     args = parser.parse_args()
     
     # 화자 인식 시스템 초기화
-    speaker_recognition = SpeakerRecognition(args.model_path)
+    speaker_recognition = SpeakerRecognition()
     
     # 화자 등록
     if args.register_audio and args.speaker_id:

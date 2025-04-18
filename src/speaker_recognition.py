@@ -6,7 +6,7 @@ from espnet2.bin.asr_inference import Speech2Text
 from sklearn.metrics.pairwise import cosine_similarity
 
 class SpeakerRecognition:
-    def __init__(self, asr_model_path):
+    def __init__(self):
         """
         화자 인식 시스템 초기화
         Args:
