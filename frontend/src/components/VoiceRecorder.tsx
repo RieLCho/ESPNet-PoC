@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Mic, MicOff, Upload, User } from 'lucide-react';
+import { Mic, MicOff } from 'lucide-react';
 
 interface VoiceRecorderProps {
   isRecording: boolean;
@@ -22,7 +22,7 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<number | null>(null);
 
   const startRecording = useCallback(async () => {
     try {
@@ -113,7 +113,7 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
               threshold: 0.7
             };
 
-        const response = await fetch(`http://localhost:8000${endpoint}`, {
+        const response = await fetch(`http://127.0.0.1:8000${endpoint}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

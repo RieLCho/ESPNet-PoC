@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Mic, MicOff, Users, Volume2, Settings, Wifi, WifiOff } from 'lucide-react';
+import  { useState, useEffect } from 'react';
+import {  Users,  Settings, Wifi, WifiOff } from 'lucide-react';
 import VoiceRecorder from './components/VoiceRecorder';
 import MetaverseRoom from './components/MetaverseRoom';
 import SpeakerPanel from './components/SpeakerPanel';
@@ -23,15 +23,28 @@ function App() {
   useEffect(() => {
     const checkServerHealth = async () => {
       try {
-        const response = await fetch('http://localhost:8000/health');
+        console.log('Checking server health...');
+        // localhost 대신 127.0.0.1을 사용해서 테스트
+        const response = await fetch('http://127.0.0.1:8000/health', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          mode: 'cors'
+        });
+        console.log('Server response status:', response.status);
         if (response.ok) {
+          const data = await response.json();
+          console.log('Server health data:', data);
           setServerStatus('connected');
           setIsConnected(true);
         } else {
+          console.log('Server response not ok:', response.status, response.statusText);
           setServerStatus('disconnected');
           setIsConnected(false);
         }
       } catch (error) {
+        console.error('Server health check error:', error);
         setServerStatus('disconnected');
         setIsConnected(false);
       }
