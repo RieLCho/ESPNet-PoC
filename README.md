@@ -67,6 +67,46 @@ python src/demo.py --test_audio test/shiroko/1.wav
 
 ![프로젝트 이미지](assets/test_shiroko.png)
 
+## 메타버스 웹 애플리케이션 실행
+
+### 백엔드 서버 실행
+
+```bash
+# 백엔드 디렉토리로 이동
+cd backend
+
+# 가상환경 활성화 (프로젝트 루트에서 이미 생성했다면)
+source ../.venv/bin/activate
+
+# FastAPI 서버 실행
+python run_server.py
+```
+
+백엔드 서버는 포트 8000에서 실행됩니다. 브라우저에서 `http://localhost:8000/docs`로 접속하면 API 문서를 확인할 수 있습니다.
+
+### 프론트엔드 실행
+
+```bash
+# 프론트엔드 디렉토리로 이동
+cd frontend
+
+# 필요한 Node.js 패키지 설치 (처음 실행 시)
+npm install
+
+# 개발 서버 실행
+npm run dev
+```
+
+프론트엔드 개발 서버는 포트 5174에서 실행됩니다. 브라우저에서 `http://localhost:5174`로 접속하면 메타버스 화자 인식 웹 애플리케이션을 사용할 수 있습니다.
+
+### 사용 방법
+
+1. 백엔드와 프론트엔드 서버를 모두 실행합니다.
+2. 브라우저에서 `http://localhost:5174`에 접속합니다.
+3. "Record Voice" 버튼을 클릭하여 음성을 녹음합니다.
+4. 녹음된 음성이 자동으로 서버에 전송되어 화자 인식이 수행됩니다.
+5. 인식 결과가 3D 메타버스 환경과 화자 패널에 표시됩니다.
+
 ## 디렉토리 구조
 
 ```
@@ -74,20 +114,32 @@ python src/demo.py --test_audio test/shiroko/1.wav
 ├── assets/                   # 이미지 파일 저장
 │   ├── embedding.png         # 임베딩 관련 이미지
 │   └── test.png              # 테스트 결과 이미지
-├── data/                     # 화자 데이터
-│   ├── kazusa/               # 카즈사 음성 학습 데이터
-│   └── mika/                 # 미카 음성 학습 데이터
-├── src/
-│   ├── speaker_recognition.py       # 화자 인식 핵심 로직
-│   ├── demo.py                      # 데모 스크립트
-│   └── realtime_speaker_recognition.py # 실시간 화자 인식
-├── test/                     # 테스트 데이터
-│   ├── kazusa/               # 카즈사 음성 테스트 데이터
-│   └── mika/                 # 미카 음성 테스트 데이터
-│   └── shiroko/              # 시로코 음성 테스트 데이터 (학습하지 않은 데이터)
-├── pyproject.toml            # 프로젝트 의존성 정의
-├── convert_to_wav.py         # 영상을 WAV로 변환
-└── speaker_embeddings.pkl    # 저장된 화자 임베딩
+├── backend/                  # 백엔드 FastAPI 서버
+│   ├── app.py                # FastAPI 애플리케이션
+│   ├── run_server.py         # 서버 실행 스크립트
+│   ├── speaker_embeddings.pkl # 저장된 화자 임베딩
+│   ├── data/                 # 화자 학습 데이터
+│   │   ├── kazusa/           # 카즈사 음성 학습 데이터
+│   │   └── mika/             # 미카 음성 학습 데이터
+│   ├── src/
+│   │   ├── speaker_recognition.py    # 화자 인식 핵심 로직
+│   │   ├── demo.py                   # 데모 스크립트
+│   │   └── realtime_speaker_recognition.py # 실시간 화자 인식
+│   └── test/                 # 테스트 데이터
+│       ├── kazusa/           # 카즈사 음성 테스트 데이터
+│       ├── mika/             # 미카 음성 테스트 데이터
+│       └── shiroko/          # 시로코 음성 테스트 데이터 (학습하지 않은 데이터)
+├── frontend/                 # React 프론트엔드
+│   ├── src/
+│   │   ├── App.tsx           # 메인 애플리케이션 컴포넌트
+│   │   └── components/
+│   │       ├── VoiceRecorder.tsx     # 음성 녹음 컴포넌트
+│   │       ├── MetaverseRoom.tsx     # 3D 메타버스 환경
+│   │       └── SpeakerPanel.tsx      # 화자 패널
+│   ├── package.json          # Node.js 의존성
+│   └── tailwind.config.js    # Tailwind CSS 설정
+├── pyproject.toml            # Python 프로젝트 의존성
+└── convert_to_wav.py         # 영상을 WAV로 변환
 ```
 
 ## 참고사항
