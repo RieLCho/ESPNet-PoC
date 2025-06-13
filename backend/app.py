@@ -117,17 +117,69 @@ def verify_api_key(api_key: str = Depends(API_KEY_HEADER)) -> str:
     )
 
 def decode_audio_data(audio_data: str) -> str:
-    """Base64 오디오 데이터를 임시 파일로 저장"""
+    """Base64 오디오 데이터를 WAV 파일로 변환"""
+    import subprocess
+    
     try:
         # Base64 디코딩
         audio_bytes = base64.b64decode(audio_data)
         
-        # 임시 파일 생성
-        temp_file = tempfile.NamedTemporaryFile(suffix='.wav', delete=False)
-        temp_file.write(audio_bytes)
-        temp_file.close()
+        # 원본 webm 임시 파일 생성
+        temp_webm = tempfile.NamedTemporaryFile(suffix='.webm', delete=False)
+        temp_webm.write(audio_bytes)
+        temp_webm.close()
         
-        return temp_file.name
+        # WAV 변환용 임시 파일 생성
+        temp_wav = tempfile.NamedTemporaryFile(suffix='.wav', delete=False)
+        temp_wav.close()
+        
+        try:
+            # ffmpeg를 사용하여 webm을 wav로 변환
+            cmd = [
+                'ffmpeg',
+                '-i', temp_webm.name,     # 입력 webm 파일
+                '-vn',                    # 비디오 스트림 제외
+                '-acodec', 'pcm_s16le',   # 오디오 코덱: 16-bit PCM
+                '-ar', '16000',           # 샘플링 레이트: 16kHz
+                '-ac', '1',               # 모노 채널
+                '-y',                     # 덮어쓰기 허용
+                temp_wav.name             # 출력 wav 파일
+            ]
+            
+            # subprocess 실행 (오류 출력 캡처)
+            result = subprocess.run(
+                cmd, 
+                capture_output=True, 
+                text=True, 
+                timeout=30  # 30초 타임아웃
+            )
+            
+            if result.returncode != 0:
+                logger.error(f"FFmpeg 변환 실패: {result.stderr}")
+                raise Exception(f"오디오 변환 실패: {result.stderr}")
+                
+            # 원본 webm 파일 삭제
+            os.unlink(temp_webm.name)
+            
+            return temp_wav.name
+            
+        except subprocess.TimeoutExpired:
+            logger.error("FFmpeg 변환 타임아웃")
+            os.unlink(temp_webm.name)
+            os.unlink(temp_wav.name)
+            raise Exception("오디오 변환 타임아웃")
+        except Exception as e:
+            # 실패 시 임시 파일들 정리
+            try:
+                os.unlink(temp_webm.name)
+            except:
+                pass
+            try:
+                os.unlink(temp_wav.name)
+            except:
+                pass
+            raise e
+            
     except Exception as e:
         logger.error(f"오디오 디코딩 실패: {e}")
         raise HTTPException(
