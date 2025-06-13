@@ -171,16 +171,8 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
           } else {
             onSpeakerIdentified(result);
             // 인식된 텍스트가 있으면 콜백 호출
-            console.log('🔍 텍스트 인식 체크:', { 
-              hasRecognizedText: !!result.recognizedText, 
-              recognizedText: result.recognizedText,
-              anonymousId: result.anonymousId 
-            });
             if (result.recognizedText) {
-              console.log('✅ onTextRecognized 호출:', result.recognizedText, result.anonymousId);
               onTextRecognized(result.recognizedText, result.anonymousId);
-            } else {
-              console.log('❌ recognizedText가 없음 또는 falsy');
             }
           }
         } catch (fetchError) {

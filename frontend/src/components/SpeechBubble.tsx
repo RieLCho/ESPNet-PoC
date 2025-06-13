@@ -18,10 +18,8 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
   const [visibleMessages, setVisibleMessages] = useState<SpeechMessage[]>([]);
 
   useEffect(() => {
-    console.log('🗨️ SpeechBubble messages 업데이트:', messages);
     // 최신 메시지들만 표시 (최대 개수 제한)
     const recentMessages = messages.slice(-maxMessages);
-    console.log('🗨️ visibleMessages 설정:', recentMessages);
     setVisibleMessages(recentMessages);
   }, [messages, maxMessages]);
 

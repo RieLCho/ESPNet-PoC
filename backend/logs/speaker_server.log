@@ -7362,3 +7362,78 @@
 2025-06-13 19:54:20,722 - espnet.nets.beam_search - INFO - best hypo: なのかなって思ってえーそしたら真剣な顔した机に向かってたから凄いいいかずらしちゃったって
 
 2025-06-13 19:54:20,752 - speaker_server - INFO - 화자 식별 결과: kazusa (유사도: 0.7215)
+2025-06-13 20:00:24,688 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:00:24,908 - root - INFO - speech length: 161816
+2025-06-13 20:00:24,965 - espnet.nets.beam_search - INFO - decoder input length: 210
+2025-06-13 20:00:24,965 - espnet.nets.beam_search - INFO - max output length: 210
+2025-06-13 20:00:24,965 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:00:39,294 - espnet.nets.beam_search - INFO - end detected at 48
+2025-06-13 20:00:39,295 - espnet.nets.beam_search - INFO - -23.26 * 0.5 = -11.63 for decoder
+2025-06-13 20:00:39,295 - espnet.nets.beam_search - INFO - -27.03 * 0.5 = -13.51 for ctc
+2025-06-13 20:00:39,295 - espnet.nets.beam_search - INFO - -134.98 * 1.0 = -134.98 for lm
+2025-06-13 20:00:39,295 - espnet.nets.beam_search - INFO - total log probability: -160.12
+2025-06-13 20:00:39,295 - espnet.nets.beam_search - INFO - normalized log probability: -3.81
+2025-06-13 20:00:39,296 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 63
+2025-06-13 20:00:39,299 - espnet.nets.beam_search - INFO - best hypo: そしたら真剣な顔した机に向かってたから凄いいいかずらしちゃうかはいっぱいぶんでも
+
+2025-06-13 20:00:39,325 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6697)
+2025-06-13 20:01:08,783 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:01:09,048 - root - INFO - speech length: 160536
+2025-06-13 20:01:09,098 - espnet.nets.beam_search - INFO - decoder input length: 208
+2025-06-13 20:01:09,098 - espnet.nets.beam_search - INFO - max output length: 208
+2025-06-13 20:01:09,098 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:01:21,796 - espnet.nets.beam_search - INFO - end detected at 44
+2025-06-13 20:01:21,797 - espnet.nets.beam_search - INFO - -41.06 * 0.5 = -20.53 for decoder
+2025-06-13 20:01:21,798 - espnet.nets.beam_search - INFO - -80.14 * 0.5 = -40.07 for ctc
+2025-06-13 20:01:21,798 - espnet.nets.beam_search - INFO - -79.34 * 1.0 = -79.34 for lm
+2025-06-13 20:01:21,798 - espnet.nets.beam_search - INFO - total log probability: -139.94
+2025-06-13 20:01:21,798 - espnet.nets.beam_search - INFO - normalized log probability: -3.59
+2025-06-13 20:01:21,798 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 34
+2025-06-13 20:01:21,801 - espnet.nets.beam_search - INFO - best hypo: いつもりでそうだなっていうのは大丈夫ですかって言ってえーだからえー見られる
+
+2025-06-13 20:01:21,829 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6030)
+2025-06-13 20:01:57,619 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:01:57,812 - root - INFO - speech length: 97816
+2025-06-13 20:01:57,877 - espnet.nets.beam_search - INFO - decoder input length: 126
+2025-06-13 20:01:57,877 - espnet.nets.beam_search - INFO - max output length: 126
+2025-06-13 20:01:57,877 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:02:01,731 - espnet.nets.beam_search - INFO - end detected at 21
+2025-06-13 20:02:01,731 - espnet.nets.beam_search - INFO - -11.67 * 0.5 =  -5.84 for decoder
+2025-06-13 20:02:01,731 - espnet.nets.beam_search - INFO - -36.50 * 0.5 = -18.25 for ctc
+2025-06-13 20:02:01,731 - espnet.nets.beam_search - INFO - -49.39 * 1.0 = -49.39 for lm
+2025-06-13 20:02:01,732 - espnet.nets.beam_search - INFO - total log probability: -73.48
+2025-06-13 20:02:01,732 - espnet.nets.beam_search - INFO - normalized log probability: -4.32
+2025-06-13 20:02:01,732 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 46
+2025-06-13 20:02:01,733 - espnet.nets.beam_search - INFO - best hypo: 今日は私の名前はジョイアンジン
+
+2025-06-13 20:02:01,758 - speaker_server - INFO - 화자 식별 결과: mika (유사도: 0.8502)
+2025-06-13 20:02:39,686 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:02:39,932 - root - INFO - speech length: 160216
+2025-06-13 20:02:39,967 - espnet.nets.beam_search - INFO - decoder input length: 207
+2025-06-13 20:02:39,968 - espnet.nets.beam_search - INFO - max output length: 207
+2025-06-13 20:02:39,968 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:02:48,480 - espnet.nets.beam_search - INFO - end detected at 44
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - -32.79 * 0.5 = -16.40 for decoder
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - -91.41 * 0.5 = -45.71 for ctc
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - -74.52 * 1.0 = -74.52 for lm
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - total log probability: -136.62
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - normalized log probability: -3.60
+2025-06-13 20:02:48,481 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 55
+2025-06-13 20:02:48,484 - espnet.nets.beam_search - INFO - best hypo: んというのはえーとやっぱり疲れてしょうがなくて大丈夫になってきてえーっと
+
+2025-06-13 20:02:48,504 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6307)
+2025-06-13 20:03:13,435 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:03:13,679 - root - INFO - speech length: 160536
+2025-06-13 20:03:13,732 - espnet.nets.beam_search - INFO - decoder input length: 208
+2025-06-13 20:03:13,733 - espnet.nets.beam_search - INFO - max output length: 208
+2025-06-13 20:03:13,733 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:03:22,947 - espnet.nets.beam_search - INFO - end detected at 44
+2025-06-13 20:03:22,948 - espnet.nets.beam_search - INFO - -23.64 * 0.5 = -11.82 for decoder
+2025-06-13 20:03:22,949 - espnet.nets.beam_search - INFO - -67.79 * 0.5 = -33.89 for ctc
+2025-06-13 20:03:22,949 - espnet.nets.beam_search - INFO - -92.13 * 1.0 = -92.13 for lm
+2025-06-13 20:03:22,949 - espnet.nets.beam_search - INFO - total log probability: -137.84
+2025-06-13 20:03:22,949 - espnet.nets.beam_search - INFO - normalized log probability: -3.53
+2025-06-13 20:03:22,949 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 63
+2025-06-13 20:03:22,953 - espnet.nets.beam_search - INFO - best hypo: ちょっとお話ししようって言うんですねえー吹かないでねん何ですかこここここと
+
+2025-06-13 20:03:22,982 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6118)

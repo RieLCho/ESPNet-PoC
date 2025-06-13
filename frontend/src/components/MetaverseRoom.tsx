@@ -44,6 +44,10 @@ const MetaverseRoom: React.FC<MetaverseRoomProps> = ({ speakers, currentSpeaker 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     renderer.setClearColor(0x000000, 0);
+    renderer.domElement.style.position = 'absolute';
+    renderer.domElement.style.top = '0';
+    renderer.domElement.style.left = '0';
+    renderer.domElement.style.zIndex = '1';
     rendererRef.current = renderer;
     mountRef.current.appendChild(renderer.domElement);
 
@@ -187,10 +191,10 @@ const MetaverseRoom: React.FC<MetaverseRoomProps> = ({ speakers, currentSpeaker 
 
   return (
     <div className="w-full h-full relative">
-      <div ref={mountRef} className="w-full h-full" />
+      <div ref={mountRef} className="w-full h-full relative z-0" />
       
       {/* 2D 오버레이 */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none z-10">
         {/* 중앙 로고 */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="bg-black/30 backdrop-blur-sm rounded-full p-8 border border-white/20">

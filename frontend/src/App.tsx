@@ -59,7 +59,6 @@ function App() {
   }, []);
 
   const handleTextRecognized = (text: string, speakerId: string | null) => {
-    console.log('🎯 handleTextRecognized 호출됨:', { text, speakerId });
     const newMessage: SpeechMessage = {
       id: `${Date.now()}-${Math.random()}`,
       text: text,
@@ -68,12 +67,7 @@ function App() {
       isKnown: speakerId !== null
     };
     
-    console.log('📝 새 메시지 생성:', newMessage);
-    setSpeechMessages(prev => {
-      const updated = [...prev, newMessage];
-      console.log('💬 speechMessages 업데이트:', updated);
-      return updated;
-    });
+    setSpeechMessages(prev => [...prev, newMessage]);
   };
 
   const handleSpeakerIdentified = (speakerData: any) => {
@@ -161,7 +155,7 @@ function App() {
             </div>
             
             {/* 말풍선 영역 */}
-            <div className="relative z-50 h-80 bg-gray-900/90 backdrop-blur-sm border-t border-white/20 flex flex-col">
+            <div className="relative z-20 h-80 bg-gray-900/95 backdrop-blur-sm border-t border-white/20 flex flex-col">
               <div className="p-4 flex-shrink-0">
                 <h3 className="text-lg font-semibold text-center text-white">💬 실시간 음성 인식</h3>
               </div>
