@@ -7437,3 +7437,63 @@
 2025-06-13 20:03:22,953 - espnet.nets.beam_search - INFO - best hypo: ちょっとお話ししようって言うんですねえー吹かないでねん何ですかこここここと
 
 2025-06-13 20:03:22,982 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6118)
+2025-06-13 20:06:26,371 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:06:26,573 - root - INFO - speech length: 160856
+2025-06-13 20:06:26,610 - espnet.nets.beam_search - INFO - decoder input length: 208
+2025-06-13 20:06:26,610 - espnet.nets.beam_search - INFO - max output length: 208
+2025-06-13 20:06:26,610 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:06:40,898 - espnet.nets.beam_search - INFO - end detected at 56
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - -73.21 * 0.5 = -36.60 for decoder
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - -127.51 * 0.5 = -63.76 for ctc
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - -72.04 * 1.0 = -72.04 for lm
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - total log probability: -172.40
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - normalized log probability: -4.10
+2025-06-13 20:06:40,900 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 36
+2025-06-13 20:06:40,904 - espnet.nets.beam_search - INFO - best hypo: えーとー何でもなくなっちゃうっていうようなものがないものなのになりましていいので
+
+2025-06-13 20:06:40,935 - speaker_server - INFO - 화자 식별 결과: chris (유사도: 0.8087)
+2025-06-13 20:06:41,199 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:06:41,442 - root - INFO - speech length: 159896
+2025-06-13 20:06:41,489 - espnet.nets.beam_search - INFO - decoder input length: 207
+2025-06-13 20:06:41,490 - espnet.nets.beam_search - INFO - max output length: 207
+2025-06-13 20:06:41,490 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:06:53,258 - espnet.nets.beam_search - INFO - end detected at 67
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - -62.79 * 0.5 = -31.39 for decoder
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - -112.86 * 0.5 = -56.43 for ctc
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - -147.64 * 1.0 = -147.64 for lm
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - total log probability: -235.46
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - normalized log probability: -3.92
+2025-06-13 20:06:53,259 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 64
+2025-06-13 20:06:53,264 - espnet.nets.beam_search - INFO - best hypo: えーっと最近編み話してるんですねあのーもう全然インターウンなのかなっていうことでまーただにいいとかおよとになるだけで
+
+2025-06-13 20:06:53,298 - speaker_server - INFO - 화자 식별 결과: kazusa (유사도: 0.8778)
+2025-06-13 20:07:33,216 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:07:33,415 - root - INFO - speech length: 161816
+2025-06-13 20:07:33,456 - espnet.nets.beam_search - INFO - decoder input length: 210
+2025-06-13 20:07:33,457 - espnet.nets.beam_search - INFO - max output length: 210
+2025-06-13 20:07:33,457 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:07:44,453 - espnet.nets.beam_search - INFO - end detected at 61
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - -44.02 * 0.5 = -22.01 for decoder
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - -98.55 * 0.5 = -49.27 for ctc
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - -116.05 * 1.0 = -116.05 for lm
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - total log probability: -187.34
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - normalized log probability: -3.35
+2025-06-13 20:07:44,454 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 48
+2025-06-13 20:07:44,459 - espnet.nets.beam_search - INFO - best hypo: えーっとー何て言うか何かできるか分かんないけないって言って何かこう感染したら何かあの北先生と言ってもこうあの
+
+2025-06-13 20:07:44,479 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.5910)
+2025-06-13 20:08:50,178 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 20:08:50,359 - root - INFO - speech length: 160216
+2025-06-13 20:08:50,391 - espnet.nets.beam_search - INFO - decoder input length: 207
+2025-06-13 20:08:50,391 - espnet.nets.beam_search - INFO - max output length: 207
+2025-06-13 20:08:50,391 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 20:09:04,570 - espnet.nets.beam_search - INFO - end detected at 54
+2025-06-13 20:09:04,571 - espnet.nets.beam_search - INFO - -73.92 * 0.5 = -36.96 for decoder
+2025-06-13 20:09:04,571 - espnet.nets.beam_search - INFO - -166.18 * 0.5 = -83.09 for ctc
+2025-06-13 20:09:04,572 - espnet.nets.beam_search - INFO - -71.93 * 1.0 = -71.93 for lm
+2025-06-13 20:09:04,572 - espnet.nets.beam_search - INFO - total log probability: -191.98
+2025-06-13 20:09:04,572 - espnet.nets.beam_search - INFO - normalized log probability: -3.92
+2025-06-13 20:09:04,572 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 57
+2025-06-13 20:09:04,577 - espnet.nets.beam_search - INFO - best hypo: えーそうですねあのーこういうあのーおーこういうことなんですけれどもえーえーっとこういっちゃって
+
+2025-06-13 20:09:04,604 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6857)

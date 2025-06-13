@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { User, UserCheck } from 'lucide-react';
 
 interface SpeechMessage {
@@ -16,12 +16,20 @@ interface SpeechBubbleProps {
 
 const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 }) => {
   const [visibleMessages, setVisibleMessages] = useState<SpeechMessage[]>([]);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // 최신 메시지들만 표시 (최대 개수 제한)
     const recentMessages = messages.slice(-maxMessages);
     setVisibleMessages(recentMessages);
   }, [messages, maxMessages]);
+
+  // 새 메시지가 추가될 때 자동 스크롤
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [visibleMessages]);
 
   const formatTime = (date: Date) => {
     return date.toLocaleTimeString('ko-KR', { 
@@ -70,7 +78,11 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
   }
 
   return (
-    <div className="flex-1 overflow-y-auto space-y-4 scroll-smooth bg-gray-800/30 rounded-lg p-4">
+    <div 
+      ref={scrollRef}
+      className="flex-1 overflow-y-auto space-y-4 scroll-smooth bg-gray-800/30 rounded-lg p-4 max-h-full speech-bubble-scroll"
+      style={{ scrollBehavior: 'smooth' }}
+    >
       {visibleMessages.map((message, index) => {
         const position = getSpeakerPosition(index);
         const speakerColor = getSpeakerColor(message.speakerId, message.isKnown);

@@ -155,11 +155,11 @@ function App() {
             </div>
             
             {/* 말풍선 영역 */}
-            <div className="relative z-20 h-80 bg-gray-900/95 backdrop-blur-sm border-t border-white/20 flex flex-col">
+            <div className="relative z-20 h-80 bg-gray-900/95 backdrop-blur-sm border-t border-white/20 flex flex-col min-h-0">
               <div className="p-4 flex-shrink-0">
                 <h3 className="text-lg font-semibold text-center text-white">💬 실시간 음성 인식</h3>
               </div>
-              <div className="flex-1 px-4 pb-4">
+              <div className="flex-1 px-4 pb-4 min-h-0">
                 <SpeechBubble messages={speechMessages} maxMessages={8} />
               </div>
             </div>
@@ -229,7 +229,7 @@ function App() {
         {/* 푸터 */}
         <footer className="p-4 bg-black/20 backdrop-blur-sm border-t border-white/20 text-center">
           <p className="text-sm text-white/70">
-            ESPNet 기반 실시간 화자 인식 시스템 | 🎯 정확도 85%+ | ⚡ 실시간 처리
+            ESPNet 기반 실시간 화자 인식 시스템
           </p>
         </footer>
       </div>
