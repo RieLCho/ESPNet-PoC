@@ -5,6 +5,7 @@ interface VoiceRecorderProps {
   isRecording: boolean;
   onRecordingChange: (recording: boolean) => void;
   onSpeakerIdentified: (speakerData: any) => void;
+  onTextRecognized: (text: string, speakerId: string | null) => void;
   isConnected: boolean;
 }
 
@@ -12,6 +13,7 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
   isRecording,
   onRecordingChange,
   onSpeakerIdentified,
+  onTextRecognized,
   isConnected
 }) => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -146,6 +148,10 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
             setError(`등록 완료: ${result.anonymousId || '알 수 없음'}`);
           } else {
             onSpeakerIdentified(result);
+            // 인식된 텍스트가 있으면 콜백 호출
+            if (result.recognizedText) {
+              onTextRecognized(result.recognizedText, result.anonymousId);
+            }
           }
         } catch (fetchError) {
           console.error('Fetch 오류:', fetchError);

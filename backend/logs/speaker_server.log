@@ -4922,3 +4922,1323 @@
 2025-06-13 18:43:05,702 - espnet.nets.beam_search - INFO - best hypo: んじゃしょうすいません
 
 2025-06-13 18:43:05,703 - speaker_server - INFO - 화자 등록 완료: chris
+2025-06-13 19:06:11,131 - speaker_server - INFO - 화자 인식 모델을 로딩 중입니다...
+2025-06-13 19:06:11,357 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/asr_train_asr_transformer_raw_char_sp/config.yaml
+2025-06-13 19:06:11,563 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:06:13,734 - root - INFO - Initialize encoder.embed.conv.0.bias to zeros
+2025-06-13 19:06:13,734 - root - INFO - Initialize encoder.embed.conv.2.bias to zeros
+2025-06-13 19:06:13,735 - root - INFO - Initialize encoder.embed.out.0.bias to zeros
+2025-06-13 19:06:13,736 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,736 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,736 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,737 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,737 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,737 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.0.norm1.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.0.norm2.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,738 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.1.norm1.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.1.norm2.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,739 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.2.norm1.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.2.norm2.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,740 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.3.norm1.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.3.norm2.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,741 - root - INFO - Initialize encoder.encoders.4.norm1.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.4.norm2.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.norm1.bias to zeros
+2025-06-13 19:06:13,742 - root - INFO - Initialize encoder.encoders.5.norm2.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.norm1.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.6.norm2.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,743 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.norm1.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.7.norm2.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,744 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.8.norm1.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.8.norm2.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,745 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.9.norm1.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.9.norm2.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,746 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.10.norm1.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.10.norm2.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.norm1.bias to zeros
+2025-06-13 19:06:13,747 - root - INFO - Initialize encoder.encoders.11.norm2.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.norm1.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.12.norm2.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,748 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.norm1.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.13.norm2.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,749 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.norm1.bias to zeros
+2025-06-13 19:06:13,750 - root - INFO - Initialize encoder.encoders.14.norm2.bias to zeros
+2025-06-13 19:06:13,752 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,753 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,753 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,753 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,753 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,753 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,754 - root - INFO - Initialize encoder.encoders.15.norm1.bias to zeros
+2025-06-13 19:06:13,754 - root - INFO - Initialize encoder.encoders.15.norm2.bias to zeros
+2025-06-13 19:06:13,754 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,755 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,755 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,755 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,755 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,756 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,756 - root - INFO - Initialize encoder.encoders.16.norm1.bias to zeros
+2025-06-13 19:06:13,756 - root - INFO - Initialize encoder.encoders.16.norm2.bias to zeros
+2025-06-13 19:06:13,756 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,756 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.norm1.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.encoders.17.norm2.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize encoder.after_norm.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize decoder.after_norm.bias to zeros
+2025-06-13 19:06:13,757 - root - INFO - Initialize decoder.output_layer.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,758 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.0.norm1.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.0.norm2.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.0.norm3.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,759 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.norm1.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.norm2.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.1.norm3.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,760 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,761 - root - INFO - Initialize decoder.decoders.2.norm1.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.2.norm2.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.2.norm3.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,762 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.3.norm1.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.3.norm2.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.3.norm3.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,763 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.norm1.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.norm2.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.4.norm3.bias to zeros
+2025-06-13 19:06:13,764 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_q.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_k.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_v.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_out.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:06:13,765 - root - INFO - Initialize decoder.decoders.5.norm1.bias to zeros
+2025-06-13 19:06:13,766 - root - INFO - Initialize decoder.decoders.5.norm2.bias to zeros
+2025-06-13 19:06:13,766 - root - INFO - Initialize decoder.decoders.5.norm3.bias to zeros
+2025-06-13 19:06:13,766 - root - INFO - Initialize ctc.ctc_lo.bias to zeros
+2025-06-13 19:06:18,724 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/lm_train_lm_char/config.yaml
+2025-06-13 19:06:18,911 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:06:19,358 - root - INFO - BatchBeamSearch implementation is selected.
+2025-06-13 19:06:19,365 - root - INFO - Beam_search: BatchBeamSearch(
+  (nn_dict): ModuleDict(
+    (decoder): TransformerDecoder(
+      (embed): Sequential(
+        (0): Embedding(3262, 512)
+        (1): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (after_norm): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+      (output_layer): Linear(in_features=512, out_features=3262, bias=True)
+      (decoders): MultiSequential(
+        (0): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (1): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (2): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (3): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (4): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (5): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (lm): SequentialRNNLM(
+      (drop): Dropout(p=0.0, inplace=False)
+      (encoder): Embedding(3262, 650, padding_idx=0)
+      (rnn): LSTM(650, 650, num_layers=2, batch_first=True)
+      (decoder): Linear(in_features=650, out_features=3262, bias=True)
+    )
+  )
+)
+2025-06-13 19:06:19,365 - root - INFO - Decoding device=cuda, dtype=float32
+2025-06-13 19:06:19,367 - root - INFO - Text tokenizer: CharTokenizer(space_symbol="<space>"non_linguistic_symbols="set()"nonsplit_symbols="set()")
+2025-06-13 19:06:19,369 - speaker_server - INFO - 화자 인식 서버가 시작되었습니다. 등록된 화자 수: 3
+2025-06-13 19:07:53,343 - speaker_server - INFO - 화자 인식 모델을 로딩 중입니다...
+2025-06-13 19:07:53,568 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/asr_train_asr_transformer_raw_char_sp/config.yaml
+2025-06-13 19:07:53,802 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:07:55,790 - root - INFO - Initialize encoder.embed.conv.0.bias to zeros
+2025-06-13 19:07:55,790 - root - INFO - Initialize encoder.embed.conv.2.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.embed.out.0.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,791 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.0.norm1.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.0.norm2.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,792 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.1.norm1.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.1.norm2.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,793 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.2.norm1.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.2.norm2.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,794 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.3.norm1.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.3.norm2.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,795 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.4.norm1.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.4.norm2.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,796 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.5.norm1.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.5.norm2.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,797 - root - INFO - Initialize encoder.encoders.6.norm1.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.6.norm2.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,798 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,799 - root - INFO - Initialize encoder.encoders.7.norm1.bias to zeros
+2025-06-13 19:07:55,799 - root - INFO - Initialize encoder.encoders.7.norm2.bias to zeros
+2025-06-13 19:07:55,799 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,799 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,799 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,800 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,800 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.8.norm1.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.8.norm2.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,801 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.9.norm1.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.9.norm2.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,802 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,803 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,803 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,803 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,803 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,803 - root - INFO - Initialize encoder.encoders.10.norm1.bias to zeros
+2025-06-13 19:07:55,804 - root - INFO - Initialize encoder.encoders.10.norm2.bias to zeros
+2025-06-13 19:07:55,804 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,804 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,805 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,805 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,805 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,805 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,806 - root - INFO - Initialize encoder.encoders.11.norm1.bias to zeros
+2025-06-13 19:07:55,806 - root - INFO - Initialize encoder.encoders.11.norm2.bias to zeros
+2025-06-13 19:07:55,806 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,806 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,806 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,807 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,807 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,807 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.12.norm1.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.12.norm2.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,808 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.13.norm1.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.13.norm2.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,809 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.14.norm1.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.14.norm2.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,810 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.15.norm1.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.15.norm2.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,811 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.16.norm1.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.16.norm2.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,812 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize encoder.encoders.17.norm1.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize encoder.encoders.17.norm2.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize encoder.after_norm.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize decoder.after_norm.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize decoder.output_layer.bias to zeros
+2025-06-13 19:07:55,813 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,814 - root - INFO - Initialize decoder.decoders.0.norm1.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.0.norm2.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.0.norm3.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,815 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,816 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,818 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,818 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,818 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,818 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,819 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,820 - root - INFO - Initialize decoder.decoders.1.norm1.bias to zeros
+2025-06-13 19:07:55,820 - root - INFO - Initialize decoder.decoders.1.norm2.bias to zeros
+2025-06-13 19:07:55,821 - root - INFO - Initialize decoder.decoders.1.norm3.bias to zeros
+2025-06-13 19:07:55,821 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,821 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,822 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,822 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,822 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,822 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.norm1.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.norm2.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.2.norm3.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,823 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,824 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.3.norm1.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.3.norm2.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.3.norm3.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,825 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.norm1.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.norm2.bias to zeros
+2025-06-13 19:07:55,826 - root - INFO - Initialize decoder.decoders.4.norm3.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_q.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_k.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_v.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_out.bias to zeros
+2025-06-13 19:07:55,827 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:07:55,828 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:07:55,828 - root - INFO - Initialize decoder.decoders.5.norm1.bias to zeros
+2025-06-13 19:07:55,828 - root - INFO - Initialize decoder.decoders.5.norm2.bias to zeros
+2025-06-13 19:07:55,828 - root - INFO - Initialize decoder.decoders.5.norm3.bias to zeros
+2025-06-13 19:07:55,828 - root - INFO - Initialize ctc.ctc_lo.bias to zeros
+2025-06-13 19:07:56,841 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/lm_train_lm_char/config.yaml
+2025-06-13 19:07:57,048 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:07:57,231 - root - INFO - BatchBeamSearch implementation is selected.
+2025-06-13 19:07:57,238 - root - INFO - Beam_search: BatchBeamSearch(
+  (nn_dict): ModuleDict(
+    (decoder): TransformerDecoder(
+      (embed): Sequential(
+        (0): Embedding(3262, 512)
+        (1): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (after_norm): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+      (output_layer): Linear(in_features=512, out_features=3262, bias=True)
+      (decoders): MultiSequential(
+        (0): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (1): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (2): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (3): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (4): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (5): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (lm): SequentialRNNLM(
+      (drop): Dropout(p=0.0, inplace=False)
+      (encoder): Embedding(3262, 650, padding_idx=0)
+      (rnn): LSTM(650, 650, num_layers=2, batch_first=True)
+      (decoder): Linear(in_features=650, out_features=3262, bias=True)
+    )
+  )
+)
+2025-06-13 19:07:57,238 - root - INFO - Decoding device=cuda, dtype=float32
+2025-06-13 19:07:57,240 - root - INFO - Text tokenizer: CharTokenizer(space_symbol="<space>"non_linguistic_symbols="set()"nonsplit_symbols="set()")
+2025-06-13 19:07:57,240 - speaker_server - INFO - 화자 인식 서버가 시작되었습니다. 등록된 화자 수: 3
+2025-06-13 19:12:06,603 - speaker_server - INFO - 화자 인식 모델을 로딩 중입니다...
+2025-06-13 19:12:06,831 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/asr_train_asr_transformer_raw_char_sp/config.yaml
+2025-06-13 19:12:07,040 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:12:08,967 - root - INFO - Initialize encoder.embed.conv.0.bias to zeros
+2025-06-13 19:12:08,967 - root - INFO - Initialize encoder.embed.conv.2.bias to zeros
+2025-06-13 19:12:08,968 - root - INFO - Initialize encoder.embed.out.0.bias to zeros
+2025-06-13 19:12:08,968 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.norm1.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.0.norm2.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,969 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.norm1.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.1.norm2.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,970 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.norm1.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.2.norm2.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,971 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.norm1.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.3.norm2.bias to zeros
+2025-06-13 19:12:08,972 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.norm1.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.4.norm2.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,973 - root - INFO - Initialize encoder.encoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.5.norm1.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.5.norm2.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,974 - root - INFO - Initialize encoder.encoders.6.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,975 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,975 - root - INFO - Initialize encoder.encoders.6.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,975 - root - INFO - Initialize encoder.encoders.6.norm1.bias to zeros
+2025-06-13 19:12:08,975 - root - INFO - Initialize encoder.encoders.6.norm2.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,976 - root - INFO - Initialize encoder.encoders.7.norm1.bias to zeros
+2025-06-13 19:12:08,977 - root - INFO - Initialize encoder.encoders.7.norm2.bias to zeros
+2025-06-13 19:12:08,977 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,977 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,977 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.8.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.8.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.8.norm1.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.8.norm2.bias to zeros
+2025-06-13 19:12:08,978 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.norm1.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.9.norm2.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,979 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.norm1.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.10.norm2.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,980 - root - INFO - Initialize encoder.encoders.11.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.11.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.11.norm1.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.11.norm2.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,981 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.12.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.12.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.12.norm1.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.12.norm2.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,982 - root - INFO - Initialize encoder.encoders.13.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.13.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.13.norm1.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.13.norm2.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.14.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,983 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.14.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.14.norm1.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.14.norm2.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.norm1.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.15.norm2.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.16.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,984 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.16.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.16.norm1.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.16.norm2.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.norm1.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.encoders.17.norm2.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize encoder.after_norm.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize decoder.after_norm.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize decoder.output_layer.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,985 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.norm1.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.norm2.bias to zeros
+2025-06-13 19:12:08,986 - root - INFO - Initialize decoder.decoders.0.norm3.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,987 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,988 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,988 - root - INFO - Initialize decoder.decoders.1.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,988 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,989 - root - INFO - Initialize decoder.decoders.1.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,990 - root - INFO - Initialize decoder.decoders.1.norm1.bias to zeros
+2025-06-13 19:12:08,990 - root - INFO - Initialize decoder.decoders.1.norm2.bias to zeros
+2025-06-13 19:12:08,990 - root - INFO - Initialize decoder.decoders.1.norm3.bias to zeros
+2025-06-13 19:12:08,991 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,991 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,992 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,992 - root - INFO - Initialize decoder.decoders.2.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,992 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,993 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,993 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,993 - root - INFO - Initialize decoder.decoders.2.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,994 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,994 - root - INFO - Initialize decoder.decoders.2.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,994 - root - INFO - Initialize decoder.decoders.2.norm1.bias to zeros
+2025-06-13 19:12:08,994 - root - INFO - Initialize decoder.decoders.2.norm2.bias to zeros
+2025-06-13 19:12:08,995 - root - INFO - Initialize decoder.decoders.2.norm3.bias to zeros
+2025-06-13 19:12:08,995 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,995 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,995 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,995 - root - INFO - Initialize decoder.decoders.3.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.norm1.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.norm2.bias to zeros
+2025-06-13 19:12:08,996 - root - INFO - Initialize decoder.decoders.3.norm3.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,997 - root - INFO - Initialize decoder.decoders.4.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.4.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.4.norm1.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.4.norm2.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.4.norm3.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_v.bias to zeros
+2025-06-13 19:12:08,998 - root - INFO - Initialize decoder.decoders.5.self_attn.linear_out.bias to zeros
+2025-06-13 19:12:08,999 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_q.bias to zeros
+2025-06-13 19:12:08,999 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_k.bias to zeros
+2025-06-13 19:12:08,999 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_v.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.src_attn.linear_out.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_1.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.feed_forward.w_2.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.norm1.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.norm2.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize decoder.decoders.5.norm3.bias to zeros
+2025-06-13 19:12:09,000 - root - INFO - Initialize ctc.ctc_lo.bias to zeros
+2025-06-13 19:12:10,070 - root - INFO - config file: /home/yangjin/ESPNet-PoC/.venv/lib/python3.10/site-packages/espnet_model_zoo/models--espnet--kan-bayashi_csj_asr_train_asr_transformer_raw_char_sp_valid.acc.ave/snapshots/864dfffdbf29350652dab7549b20a2e72e854967/exp/lm_train_lm_char/config.yaml
+2025-06-13 19:12:10,284 - root - INFO - Vocabulary size: 3262
+2025-06-13 19:12:10,442 - root - INFO - BatchBeamSearch implementation is selected.
+2025-06-13 19:12:10,447 - root - INFO - Beam_search: BatchBeamSearch(
+  (nn_dict): ModuleDict(
+    (decoder): TransformerDecoder(
+      (embed): Sequential(
+        (0): Embedding(3262, 512)
+        (1): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (after_norm): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+      (output_layer): Linear(in_features=512, out_features=3262, bias=True)
+      (decoders): MultiSequential(
+        (0): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (1): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (2): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (3): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (4): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (5): DecoderLayer(
+          (self_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (src_attn): MultiHeadedAttention(
+            (linear_q): Linear(in_features=512, out_features=512, bias=True)
+            (linear_k): Linear(in_features=512, out_features=512, bias=True)
+            (linear_v): Linear(in_features=512, out_features=512, bias=True)
+            (linear_out): Linear(in_features=512, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_norm): Identity()
+            (k_norm): Identity()
+          )
+          (feed_forward): PositionwiseFeedForward(
+            (w_1): Linear(in_features=512, out_features=2048, bias=True)
+            (w_2): Linear(in_features=2048, out_features=512, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation): ReLU()
+          )
+          (norm1): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm2): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (norm3): LayerNorm((512,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (lm): SequentialRNNLM(
+      (drop): Dropout(p=0.0, inplace=False)
+      (encoder): Embedding(3262, 650, padding_idx=0)
+      (rnn): LSTM(650, 650, num_layers=2, batch_first=True)
+      (decoder): Linear(in_features=650, out_features=3262, bias=True)
+    )
+  )
+)
+2025-06-13 19:12:10,448 - root - INFO - Decoding device=cuda, dtype=float32
+2025-06-13 19:12:10,449 - root - INFO - Text tokenizer: CharTokenizer(space_symbol="<space>"non_linguistic_symbols="set()"nonsplit_symbols="set()")
+2025-06-13 19:12:10,449 - speaker_server - INFO - 화자 인식 서버가 시작되었습니다. 등록된 화자 수: 3

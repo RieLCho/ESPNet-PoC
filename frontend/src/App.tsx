@@ -3,6 +3,7 @@ import {  Users,  Settings, Wifi, WifiOff } from 'lucide-react';
 import VoiceRecorder from './components/VoiceRecorder';
 import MetaverseRoom from './components/MetaverseRoom';
 import SpeakerPanel from './components/SpeakerPanel';
+import SpeechBubble, { type SpeechMessage } from './components/SpeechBubble';
 
 interface Speaker {
   id: string;
@@ -18,6 +19,7 @@ function App() {
   const [currentSpeaker, setCurrentSpeaker] = useState<Speaker | null>(null);
   const [isConnected, setIsConnected] = useState(false);
   const [serverStatus, setServerStatus] = useState<'connecting' | 'connected' | 'disconnected'>('connecting');
+  const [speechMessages, setSpeechMessages] = useState<SpeechMessage[]>([]);
 
   // 서버 연결 상태 확인
   useEffect(() => {
@@ -54,6 +56,18 @@ function App() {
     const interval = setInterval(checkServerHealth, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleTextRecognized = (text: string, speakerId: string | null) => {
+    const newMessage: SpeechMessage = {
+      id: `${Date.now()}-${Math.random()}`,
+      text: text,
+      speakerId: speakerId,
+      timestamp: new Date(),
+      isKnown: speakerId !== null
+    };
+    
+    setSpeechMessages(prev => [...prev, newMessage]);
+  };
 
   const handleSpeakerIdentified = (speakerData: any) => {
     if (speakerData.isKnownSpeaker) {
@@ -131,11 +145,21 @@ function App() {
         {/* 메인 컨텐츠 */}
         <div className="flex-1 flex">
           {/* 메타버스 룸 (메인 영역) */}
-          <div className="flex-1 relative">
-            <MetaverseRoom 
-              speakers={speakers}
-              currentSpeaker={currentSpeaker}
-            />
+          <div className="flex-1 relative flex flex-col">
+            <div className="flex-1">
+              <MetaverseRoom 
+                speakers={speakers}
+                currentSpeaker={currentSpeaker}
+              />
+            </div>
+            
+            {/* 말풍선 영역 */}
+            <div className="h-80 bg-black/20 backdrop-blur-sm border-t border-white/20">
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-4 text-center">💬 실시간 음성 인식</h3>
+                <SpeechBubble messages={speechMessages} maxMessages={8} />
+              </div>
+            </div>
             
             {/* 현재 화자 표시 */}
             {currentSpeaker && (
@@ -161,6 +185,7 @@ function App() {
                 isRecording={isRecording}
                 onRecordingChange={setIsRecording}
                 onSpeakerIdentified={handleSpeakerIdentified}
+                onTextRecognized={handleTextRecognized}
                 isConnected={isConnected}
               />
             </div>

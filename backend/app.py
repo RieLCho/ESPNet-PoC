@@ -277,9 +277,9 @@ async def identify_speaker(
         temp_audio_path = decode_audio_data(request.audioData)
         
         try:
-            # 화자 식별
+            # 화자 식별 (음성 인식 텍스트 포함)
             start_time_identify = time.time()
-            speaker_id, similarity = speaker_model.identify_speaker(
+            speaker_id, similarity, recognized_text = speaker_model.identify_speaker_with_text(
                 temp_audio_path, 
                 threshold=request.threshold
             )
@@ -294,6 +294,7 @@ async def identify_speaker(
                 "isKnownSpeaker": is_known,
                 "threshold": request.threshold,
                 "processingTimeSeconds": round(processing_time, 3),
+                "recognizedText": recognized_text,  # 음성 인식 텍스트 추가
                 "timestamp": datetime.now().isoformat()
             }
             
