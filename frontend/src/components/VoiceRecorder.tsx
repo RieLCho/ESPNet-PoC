@@ -28,6 +28,7 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
 
   const startRecording = useCallback(async () => {
     try {
+      console.log('🎙️ 녹음 시작 시도:', { isConnected, registrationMode, speakerId });
       setError(null);
       const stream = await navigator.mediaDevices.getUserMedia({ 
         audio: {
@@ -91,7 +92,28 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
   }, [onRecordingChange]);
 
   const processAudio = async (audioBlob: Blob) => {
-    if (!isConnected) {
+    console.log('🔊 오디오 처리 시작:', { isConnected, size: audioBlob.size });
+    
+    // 실시간으로 서버 연결 상태 재확인
+    let serverConnected = isConnected;
+    if (!serverConnected) {
+      console.log('🔄 서버 연결 상태 재확인...');
+      try {
+        const healthResponse = await fetch('http://127.0.0.1:8000/health', {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' },
+          mode: 'cors'
+        });
+        serverConnected = healthResponse.ok;
+        console.log('🔄 재확인 결과:', serverConnected);
+      } catch (error) {
+        console.error('🔄 재확인 실패:', error);
+        serverConnected = false;
+      }
+    }
+    
+    if (!serverConnected) {
+      console.error('❌ 서버 연결 상태:', serverConnected);
       setError('서버에 연결되어 있지 않습니다.');
       return;
     }
@@ -221,7 +243,21 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
         
         {/* 녹음 버튼 */}
         <button
-          onClick={isRecording ? stopRecording : startRecording}
+          onClick={() => {
+            console.log('🔘 버튼 클릭:', { 
+              isRecording, 
+              isProcessing, 
+              isConnected, 
+              registrationMode, 
+              speakerId: speakerId.trim(),
+              disabled: isProcessing || !isConnected || (registrationMode && !speakerId.trim())
+            });
+            if (isRecording) {
+              stopRecording();
+            } else {
+              startRecording();
+            }
+          }}
           disabled={isProcessing || !isConnected || (registrationMode && !speakerId.trim())}
           className={`w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
             isRecording

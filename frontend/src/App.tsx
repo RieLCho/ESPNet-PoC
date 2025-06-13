@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const checkServerHealth = async () => {
       try {
-        console.log('Checking server health...');
+        console.log('🔍 서버 상태 확인 중...');
         // localhost 대신 127.0.0.1을 사용해서 테스트
         const response = await fetch('http://127.0.0.1:8000/health', {
           method: 'GET',
@@ -34,19 +34,20 @@ function App() {
           },
           mode: 'cors'
         });
-        console.log('Server response status:', response.status);
+        console.log('📡 서버 응답 상태:', response.status);
         if (response.ok) {
           const data = await response.json();
-          console.log('Server health data:', data);
+          console.log('✅ 서버 연결 성공:', data);
+          console.log('🔄 상태 업데이트: connected');
           setServerStatus('connected');
           setIsConnected(true);
         } else {
-          console.log('Server response not ok:', response.status, response.statusText);
+          console.log('❌ 서버 응답 실패:', response.status, response.statusText);
           setServerStatus('disconnected');
           setIsConnected(false);
         }
       } catch (error) {
-        console.error('Server health check error:', error);
+        console.error('💥 서버 연결 오류:', error);
         setServerStatus('disconnected');
         setIsConnected(false);
       }
