@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 스크롤바 스타일 */
+.speech-bubble-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.speech-bubble-scroll::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.5);
+  border-radius: 3px;
+}
+
+.speech-bubble-scroll::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.8);
+  border-radius: 3px;
+}
+
+.speech-bubble-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 1);
+}

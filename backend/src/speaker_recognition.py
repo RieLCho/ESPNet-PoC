@@ -169,8 +169,7 @@ class SpeakerRecognition:
         # tqdm을 사용하여 진행 상황 표시
         for speaker_id, audio_path in tqdm(speaker_data, desc="화자 등록", unit="파일"):
             self.register_speaker(speaker_id, audio_path, save_immediately=False)
-        
-        # 모든 등록 완료 후 한 번만 저장
+          # 모든 등록 완료 후 한 번만 저장
         if self._save_pending:
             self.save_embeddings()
         
@@ -187,6 +186,51 @@ class SpeakerRecognition:
         test_embedding = self.extract_speaker_embedding(audio_path)
         print(f"임베딩 추출 시간: {time.time() - start_time:.2f}초")
         
+        return self._identify_speaker_with_embedding(test_embedding, threshold)
+    
+    def identify_speaker_with_text(self, audio_path, threshold=0.7):
+        """
+        입력된 음성의 화자 식별 및 음성 인식 텍스트 반환
+        Args:
+            audio_path (str): 식별할 음성 파일 경로
+            threshold (float): 유사도 임계값
+        Returns:
+            tuple: (가장 유사한 화자 ID, 유사도 점수, 인식된 텍스트)
+        """
+        start_time = time.time()
+        
+        # 오디오 파일 로드
+        waveform, sample_rate = torchaudio.load(audio_path)
+        if sample_rate != 16000:
+            waveform = torchaudio.transforms.Resample(sample_rate, 16000)(waveform)
+        
+        speech = waveform.squeeze().numpy()
+        
+        # ESPnet 추론으로 임베딩과 텍스트 동시 추출
+        with torch.no_grad():
+            nbests = self.speech2text(speech)
+        
+        # 임베딩과 텍스트 추출
+        test_embedding = nbests[0][2]  # 화자 임베딩
+        recognized_text = nbests[0][0]  # 인식된 텍스트
+        
+        print(f"임베딩 및 텍스트 추출 시간: {time.time() - start_time:.2f}초")
+        print(f"인식된 텍스트: {recognized_text}")
+        
+        # 화자 식별
+        speaker_id, similarity = self._identify_speaker_with_embedding(test_embedding, threshold)
+        
+        return speaker_id, similarity, recognized_text
+    
+    def _identify_speaker_with_embedding(self, test_embedding, threshold=0.7):
+        """
+        추출된 임베딩으로 화자 식별 수행
+        Args:
+            test_embedding: 추출된 화자 임베딩
+            threshold (float): 유사도 임계값
+        Returns:
+            tuple: (가장 유사한 화자 ID, 유사도 점수)
+        """        
         # 리스트인 경우 NumPy 배열로 변환
         if isinstance(test_embedding, list):
             test_embedding = np.array(test_embedding)
