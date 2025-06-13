@@ -7242,3 +7242,63 @@
 2025-06-13 19:25:02,833 - espnet.nets.beam_search - INFO - best hypo: また始まるのかって思っちゃって気持ちじゃん何か
 
 2025-06-13 19:25:02,863 - speaker_server - INFO - 화자 식별 결과: mika (유사도: 0.7198)
+2025-06-13 19:28:46,785 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 19:28:47,003 - root - INFO - speech length: 81176
+2025-06-13 19:28:47,068 - espnet.nets.beam_search - INFO - decoder input length: 105
+2025-06-13 19:28:47,069 - espnet.nets.beam_search - INFO - max output length: 105
+2025-06-13 19:28:47,069 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 19:28:52,826 - espnet.nets.beam_search - INFO - end detected at 26
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - -21.85 * 0.5 = -10.92 for decoder
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - -48.73 * 0.5 = -24.37 for ctc
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - -51.92 * 1.0 = -51.92 for lm
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - total log probability: -87.21
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - normalized log probability: -4.15
+2025-06-13 19:28:52,827 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 59
+2025-06-13 19:28:52,829 - espnet.nets.beam_search - INFO - best hypo: えーこれはあの日曜日っていつもの学生が
+
+2025-06-13 19:28:52,865 - speaker_server - INFO - 화자 식별 결과: kazusa (유사도: 0.9857)
+2025-06-13 19:35:56,346 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 19:35:56,567 - root - INFO - speech length: 160216
+2025-06-13 19:35:56,633 - espnet.nets.beam_search - INFO - decoder input length: 207
+2025-06-13 19:35:56,633 - espnet.nets.beam_search - INFO - max output length: 207
+2025-06-13 19:35:56,633 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 19:36:11,092 - espnet.nets.beam_search - INFO - end detected at 48
+2025-06-13 19:36:11,096 - espnet.nets.beam_search - INFO - -32.98 * 0.5 = -16.49 for decoder
+2025-06-13 19:36:11,098 - espnet.nets.beam_search - INFO - -30.50 * 0.5 = -15.25 for ctc
+2025-06-13 19:36:11,098 - espnet.nets.beam_search - INFO - -127.61 * 1.0 = -127.61 for lm
+2025-06-13 19:36:11,099 - espnet.nets.beam_search - INFO - total log probability: -159.34
+2025-06-13 19:36:11,099 - espnet.nets.beam_search - INFO - normalized log probability: -3.71
+2025-06-13 19:36:11,100 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 64
+2025-06-13 19:36:11,105 - espnet.nets.beam_search - INFO - best hypo: んで日曜日ってんいつも学生活がまた始まるのかって思って気持ちじゃってんでも先生かな
+
+2025-06-13 19:36:11,142 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6243)
+2025-06-13 19:36:53,440 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 19:36:53,681 - root - INFO - speech length: 159896
+2025-06-13 19:36:53,728 - espnet.nets.beam_search - INFO - decoder input length: 207
+2025-06-13 19:36:53,728 - espnet.nets.beam_search - INFO - max output length: 207
+2025-06-13 19:36:53,729 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 19:37:06,754 - espnet.nets.beam_search - INFO - end detected at 61
+2025-06-13 19:37:06,755 - espnet.nets.beam_search - INFO - -49.56 * 0.5 = -24.78 for decoder
+2025-06-13 19:37:06,755 - espnet.nets.beam_search - INFO - -109.92 * 0.5 = -54.96 for ctc
+2025-06-13 19:37:06,755 - espnet.nets.beam_search - INFO - -131.51 * 1.0 = -131.51 for lm
+2025-06-13 19:37:06,755 - espnet.nets.beam_search - INFO - total log probability: -211.26
+2025-06-13 19:37:06,756 - espnet.nets.beam_search - INFO - normalized log probability: -3.91
+2025-06-13 19:37:06,756 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 54
+2025-06-13 19:37:06,761 - espnet.nets.beam_search - INFO - best hypo: 何となくなったらいいかって言うと何か先生って言ったらあのー何週からもう私の為に時間を空けたいってほしいな
+
+2025-06-13 19:37:06,807 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6047)
+2025-06-13 19:37:45,782 - speaker_server - INFO - 화자 식별 요청
+2025-06-13 19:37:46,033 - root - INFO - speech length: 160856
+2025-06-13 19:37:46,092 - espnet.nets.beam_search - INFO - decoder input length: 208
+2025-06-13 19:37:46,092 - espnet.nets.beam_search - INFO - max output length: 208
+2025-06-13 19:37:46,093 - espnet.nets.beam_search - INFO - min output length: 0
+2025-06-13 19:37:59,431 - espnet.nets.beam_search - INFO - end detected at 44
+2025-06-13 19:37:59,432 - espnet.nets.beam_search - INFO - -17.05 * 0.5 =  -8.53 for decoder
+2025-06-13 19:37:59,432 - espnet.nets.beam_search - INFO - -27.33 * 0.5 = -13.66 for ctc
+2025-06-13 19:37:59,432 - espnet.nets.beam_search - INFO - -127.50 * 1.0 = -127.50 for lm
+2025-06-13 19:37:59,433 - espnet.nets.beam_search - INFO - total log probability: -149.69
+2025-06-13 19:37:59,433 - espnet.nets.beam_search - INFO - normalized log probability: -3.74
+2025-06-13 19:37:59,433 - espnet.nets.beam_search - INFO - total number of ended hypotheses: 38
+2025-06-13 19:37:59,437 - espnet.nets.beam_search - INFO - best hypo: えーそしたら真剣な顔した机に向かってたから次にいたずらしちゃったえーっとでも
+
+2025-06-13 19:37:59,460 - speaker_server - INFO - 화자 식별 결과: None (유사도: 0.6978)

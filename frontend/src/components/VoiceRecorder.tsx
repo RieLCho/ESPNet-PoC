@@ -66,12 +66,12 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
         setRecordingTime(prev => prev + 1);
       }, 1000);
       
-      // 5초 후 자동 중지
+      // 10초 후 자동 중지
       setTimeout(() => {
         if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
           stopRecording();
         }
-      }, 5000);
+      }, 10000);
       
     } catch (err) {
       setError('마이크 접근이 거부되었습니다.');
@@ -305,8 +305,8 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
         {/* 도움말 */}
         <div className="mt-4 text-xs text-white/50">
           {registrationMode 
-            ? '새로운 화자를 등록하려면 화자 ID를 입력하고 5초간 말하세요.'
-            : '5초간 말하면 자동으로 화자를 식별합니다.'
+            ? '새로운 화자를 등록하려면 화자 ID를 입력하고 10초간 말하세요.'
+            : '10초간 말하면 자동으로 화자를 식별합니다.'
           }
         </div>
       </div>
