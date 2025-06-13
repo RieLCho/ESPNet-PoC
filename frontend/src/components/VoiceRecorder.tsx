@@ -95,47 +95,67 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
     }
 
     setIsProcessing(true);
+    console.log('오디오 처리 시작:', { size: audioBlob.size, type: audioBlob.type });
+    
     try {
       // Blob을 base64로 변환
       const reader = new FileReader();
       reader.onloadend = async () => {
-        const base64Audio = (reader.result as string).split(',')[1];
-        
-        const endpoint = registrationMode ? '/speakers/register' : '/speakers/identify';
-        const payload = registrationMode 
-          ? {
-              anonymousId: speakerId || `speaker_${Date.now()}`,
-              audioData: base64Audio,
-              metadata: { registeredAt: new Date().toISOString() }
-            }
-          : {
-              audioData: base64Audio,
-              threshold: 0.7
-            };
+        try {
+          const base64Audio = (reader.result as string).split(',')[1];
+          console.log('Base64 변환 완료, 길이:', base64Audio.length);
+          
+          const endpoint = registrationMode ? '/speakers/register' : '/speakers/identify';
+          const payload = registrationMode 
+            ? {
+                anonymousId: speakerId || `speaker_${Date.now()}`,
+                audioData: base64Audio,
+                metadata: { registeredAt: new Date().toISOString() }
+              }
+            : {
+                audioData: base64Audio,
+                threshold: 0.7
+              };
 
-        const response = await fetch(`http://127.0.0.1:8000${endpoint}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-API-Key': 'metaverse_demo_key'
-          },
-          body: JSON.stringify(payload)
-        });
+          console.log('API 요청 시작:', { endpoint, payloadSize: JSON.stringify(payload).length });
 
-        if (!response.ok) {
-          throw new Error(`서버 오류: ${response.status}`);
+          const response = await fetch(`http://127.0.0.1:8000${endpoint}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-API-Key': 'metaverse_demo_key'
+            },
+            body: JSON.stringify(payload)
+          });
+
+          console.log('서버 응답:', { status: response.status, statusText: response.statusText });
+
+          if (!response.ok) {
+            const errorText = await response.text();
+            console.error('서버 오류 응답:', errorText);
+            throw new Error(`서버 오류: ${response.status} - ${errorText}`);
+          }
+
+          const result = await response.json();
+          console.log('응답 데이터:', result);
+          
+          if (registrationMode) {
+            setError(null);
+            setSpeakerId('');
+            setRegistrationMode(false);
+            setError(`등록 완료: ${result.anonymousId || '알 수 없음'}`);
+          } else {
+            onSpeakerIdentified(result);
+          }
+        } catch (fetchError) {
+          console.error('Fetch 오류:', fetchError);
+          setError(`네트워크 오류: ${(fetchError as Error).message}`);
         }
-
-        const result = await response.json();
-        
-        if (registrationMode) {
-          setError(null);
-          setSpeakerId('');
-          setRegistrationMode(false);
-          // 등록 성공 알림
-        } else {
-          onSpeakerIdentified(result);
-        }
+      };
+      
+      reader.onerror = () => {
+        console.error('FileReader 오류');
+        setError('오디오 파일 읽기 실패');
       };
       
       reader.readAsDataURL(audioBlob);
