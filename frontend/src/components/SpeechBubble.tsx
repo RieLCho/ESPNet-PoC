@@ -18,8 +18,10 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
   const [visibleMessages, setVisibleMessages] = useState<SpeechMessage[]>([]);
 
   useEffect(() => {
+    console.log('🗨️ SpeechBubble messages 업데이트:', messages);
     // 최신 메시지들만 표시 (최대 개수 제한)
     const recentMessages = messages.slice(-maxMessages);
+    console.log('🗨️ visibleMessages 설정:', recentMessages);
     setVisibleMessages(recentMessages);
   }, [messages, maxMessages]);
 
@@ -59,18 +61,18 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
 
   if (visibleMessages.length === 0) {
     return (
-      <div className="h-64 flex items-center justify-center text-white/50">
-        <div className="text-center">
+      <div className="flex-1 flex items-center justify-center text-white/70 bg-gray-800/50 rounded-lg">
+        <div className="text-center p-8">
           <div className="text-4xl mb-2">🎙️</div>
-          <p>음성을 입력하면 여기에 말풍선이 나타납니다</p>
-          <p className="text-xs mt-2 text-white/30">5초간 말하면 자동으로 인식됩니다</p>
+          <p className="text-white">음성을 입력하면 여기에 말풍선이 나타납니다</p>
+          <p className="text-xs mt-2 text-white/50">10초간 말하면 자동으로 인식됩니다</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="h-64 overflow-y-auto p-4 space-y-4 scroll-smooth">
+    <div className="flex-1 overflow-y-auto space-y-4 scroll-smooth bg-gray-800/30 rounded-lg p-4">
       {visibleMessages.map((message, index) => {
         const position = getSpeakerPosition(index);
         const speakerColor = getSpeakerColor(message.speakerId, message.isKnown);
@@ -78,12 +80,9 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
         return (
           <div
             key={message.id}
-            className={`flex items-start gap-3 animate-fade-in ${
+            className={`flex items-start gap-3 ${
               position === 'right' ? 'flex-row-reverse' : 'flex-row'
             }`}
-            style={{
-              animationDelay: `${index * 0.1}s`
-            }}
           >
             {/* 화자 아바타 */}
             <div className={`flex-shrink-0 w-10 h-10 rounded-full ${speakerColor} flex items-center justify-center text-white shadow-lg transition-all duration-300 hover:scale-110`}>
