@@ -196,7 +196,7 @@ const MetaverseRoom: React.FC<MetaverseRoomProps> = ({ speakers, currentSpeaker 
       {/* 2D 오버레이 */}
       <div className="absolute inset-0 pointer-events-none z-10">
         {/* 중앙 로고 */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="relative w-80 pt-4">
           <div className="bg-black/30 backdrop-blur-sm rounded-full p-8 border border-white/20">
             <h2 className="text-4xl font-bold text-white text-center mb-2">
               🌌 MetaVerse

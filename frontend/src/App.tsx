@@ -155,11 +155,9 @@ function App() {
             </div>
             
             {/* 말풍선 영역 */}
-            <div className="relative z-20 h-80 bg-gray-900/95 backdrop-blur-sm border-t border-white/20 flex flex-col min-h-0">
-              <div className="p-4 flex-shrink-0">
-                <h3 className="text-lg font-semibold text-center text-white">💬 실시간 음성 인식</h3>
-              </div>
-              <div className="flex-1 px-4 pb-4 min-h-0">
+            <div className="z-10 h-80 bg-black/20 backdrop-blur-sm border-t border-white/20">
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-4 text-center">💬 실시간 음성 인식</h3>
                 <SpeechBubble messages={speechMessages} maxMessages={8} />
               </div>
             </div>
@@ -181,7 +179,7 @@ function App() {
           </div>
 
           {/* 사이드 패널 */}
-          <div className="w-80 bg-black/20 backdrop-blur-sm border-l border-white/20 flex flex-col">
+          <div className="w-100 bg-black/20 backdrop-blur-sm border-l border-white/20 flex flex-col">
             {/* 음성 녹음 컨트롤 */}
             <div className="p-6 border-b border-white/20">
               <VoiceRecorder

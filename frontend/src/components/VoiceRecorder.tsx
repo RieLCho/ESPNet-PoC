@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Mic, MicOff } from 'lucide-react';
+import { Mic, MicOff, Upload, File } from 'lucide-react';
 
 interface VoiceRecorderProps {
   isRecording: boolean;
@@ -21,10 +21,13 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
   const [recordingTime, setRecordingTime] = useState(0);
   const [registrationMode, setRegistrationMode] = useState(false);
   const [speakerId, setSpeakerId] = useState('');
+  const [inputMode, setInputMode] = useState<'mic' | 'file'>('mic'); // 입력 모드 선택
+  const [selectedFile, setSelectedFile] = useState<File | null>(null); // 선택된 파일
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<number | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null); // 파일 입력 ref
 
   const startRecording = useCallback(async () => {
     try {
@@ -195,6 +198,26 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
     }
   };
 
+  const handleFileUpload = useCallback(async (file: File) => {
+    if (file && (file.type === 'audio/wav' || file.type === 'audio/x-wav')) {
+      setIsProcessing(true);
+      setError(null);
+      
+      try {
+        // WAV 파일을 Blob으로 변환
+        const audioBlob = new Blob([file], { type: 'audio/wav' });
+        await processAudio(audioBlob);
+      } catch (err) {
+        setError(`파일 처리 중 오류 발생: ${(err as Error).message}`);
+        console.error('Error processing file:', err);
+      } finally {
+        setIsProcessing(false);
+      }
+    } else {
+      setError('지원하지 않는 파일 형식입니다. WAV 파일만 업로드 가능합니다.');
+    }
+  }, [processAudio]);
+
   const formatTime = (seconds: number) => {
     return `${Math.floor(seconds / 60)}:${(seconds % 60).toString().padStart(2, '0')}`;
   };
@@ -241,40 +264,105 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
           </div>
         )}
         
-        {/* 녹음 버튼 */}
-        <button
-          onClick={() => {
-            console.log('🔘 버튼 클릭:', { 
-              isRecording, 
-              isProcessing, 
-              isConnected, 
-              registrationMode, 
-              speakerId: speakerId.trim(),
-              disabled: isProcessing || !isConnected || (registrationMode && !speakerId.trim())
-            });
-            if (isRecording) {
-              stopRecording();
-            } else {
-              startRecording();
-            }
-          }}
-          disabled={isProcessing || !isConnected || (registrationMode && !speakerId.trim())}
-          className={`w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
-            isRecording
-              ? 'bg-red-500 hover:bg-red-600 animate-pulse'
-              : isConnected
-              ? 'bg-blue-500 hover:bg-blue-600'
-              : 'bg-gray-500 cursor-not-allowed'
-          } ${isProcessing ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          {isProcessing ? (
-            <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
-          ) : isRecording ? (
-            <MicOff className="w-8 h-8 text-white" />
-          ) : (
-            <Mic className="w-8 h-8 text-white" />
-          )}
-        </button>
+        {/* 입력 모드 선택 */}
+        <div className="flex justify-start space-x-4 mb-4">
+          <button
+            onClick={() => setInputMode('mic')}
+            className={`px-4 py-2 rounded-lg text-sm transition-all flex items-center space-x-2 ${
+              inputMode === 'mic' 
+                ? 'bg-blue-500 text-white shadow-md' 
+                : 'bg-white/10 text-white/70 hover:bg-white/20'
+            }`}
+          >
+            <Mic className="w-5 h-5" />
+            <span>마이크 입력</span>
+          </button>
+          <button
+            onClick={() => setInputMode('file')}
+            className={`px-4 py-2 rounded-lg text-sm transition-all flex items-center space-x-2 ${
+              inputMode === 'file' 
+                ? 'bg-green-500 text-white shadow-md' 
+                : 'bg-white/10 text-white/70 hover:bg-white/20'
+            }`}
+          >
+            <Upload className="w-5 h-5" />
+            <span>파일 업로드</span>
+          </button>
+        </div>
+
+        {/* 파일 업로드 (입력 모드가 'file'일 때만) */}
+        {inputMode === 'file' && (
+          <div className="mb-4">
+            <input
+              type="file"
+              accept=".wav"
+              onChange={(e) => {
+                const file = e.target.files?.[0] || null;
+                setSelectedFile(file);
+                if (file) {
+                  handleFileUpload(file);
+                }
+              }}
+              className="hidden"
+              ref={fileInputRef}
+            />
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md transition-all flex items-center justify-center space-x-2 hover:bg-blue-600"
+            >
+              {selectedFile ? (
+                <>
+                  <File className="w-5 h-5" />
+                  <span>{selectedFile.name}</span>
+                </>
+              ) : (
+                <>
+                  <Upload className="w-5 h-5" />
+                  <span>파일 선택</span>
+                </>
+              )}
+            </button>
+          </div>
+        )}
+        
+        {/* 녹음 버튼 (마이크 모드일 때만) */}
+        {inputMode === 'mic' && (
+          <div className='flex items-center justify-center'>
+          <button
+            onClick={() => {
+              console.log('🔘 버튼 클릭:', { 
+                isRecording, 
+                isProcessing, 
+                isConnected, 
+                registrationMode, 
+                speakerId: speakerId.trim(),
+                disabled: isProcessing || !isConnected || (registrationMode && !speakerId.trim())
+              });
+              if (isRecording) {
+                stopRecording();
+              } else {
+                startRecording();
+              }
+            }}
+            disabled={isProcessing || !isConnected || (registrationMode && !speakerId.trim())}
+            className={`w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
+              isRecording
+                ? 'bg-red-500 hover:bg-red-600 animate-pulse'
+                : isConnected
+                ? 'bg-blue-500 hover:bg-blue-600'
+                : 'bg-gray-500 cursor-not-allowed'
+            } ${isProcessing ? 'opacity-50 cursor-not-allowed' : ''}`}
+          >
+            {isProcessing ? (
+              <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            ) : isRecording ? (
+              <MicOff className="w-8 h-8 text-white" />
+            ) : (
+              <Mic className="w-8 h-8 text-white" />
+            )}
+          </button>
+          </div>
+        )}
         
         {/* 상태 표시 */}
         <div className="mt-4 text-sm">
@@ -304,10 +392,15 @@ const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
         
         {/* 도움말 */}
         <div className="mt-4 text-xs text-white/50">
-          {registrationMode 
-            ? '새로운 화자를 등록하려면 화자 ID를 입력하고 10초간 말하세요.'
-            : '10초간 말하면 자동으로 화자를 식별합니다.'
-          }
+          {inputMode === 'mic' ? (
+            registrationMode 
+              ? '새로운 화자를 등록하려면 화자 ID를 입력하고 10초간 말하세요.'
+              : '10초간 말하면 자동으로 화자를 식별합니다.'
+          ) : (
+            registrationMode
+              ? 'WAV 파일을 업로드하여 새로운 화자를 등록하세요.'
+              : 'WAV 파일을 업로드하여 화자를 식별하세요.'
+          )}
         </div>
       </div>
     </div>
