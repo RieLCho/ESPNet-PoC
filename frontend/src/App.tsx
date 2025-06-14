@@ -117,7 +117,9 @@ function App() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
               🎤 메타버스 화자 인식
             </h1>
-            <div className="flex items-center space-x-2">
+            
+          </div>
+          <div className="flex items-center space-x-2">
               {isConnected ? (
                 <>
                   <Wifi className="w-5 h-5 text-green-400" />
@@ -130,17 +132,6 @@ function App() {
                 </>
               )}
             </div>
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <Users className="w-5 h-5" />
-              <span className="text-sm">{speakers.length}명 참여</span>
-            </div>
-            <button className="p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-              <Settings className="w-5 h-5" />
-            </button>
-          </div>
         </header>
 
         {/* 메인 컨텐츠 */}
@@ -155,9 +146,11 @@ function App() {
             </div>
             
             {/* 말풍선 영역 */}
-            <div className="z-10 h-80 bg-black/20 backdrop-blur-sm border-t border-white/20">
-              <div className="p-4">
+            <div className="z-10 flex flex-col bg-black/20 backdrop-blur-sm border-t border-white/20" style={{ height: '500px' }}>
+              <div className="p-4 flex-shrink-0">
                 <h3 className="text-lg font-semibold mb-4 text-center">💬 실시간 음성 인식</h3>
+              </div>
+              <div className="flex-1 px-4 pb-4 min-h-0">
                 <SpeechBubble messages={speechMessages} maxMessages={8} />
               </div>
             </div>

@@ -80,7 +80,7 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ messages, maxMessages = 10 
   return (
     <div 
       ref={scrollRef}
-      className="flex-1 overflow-y-auto space-y-4 scroll-smooth bg-gray-800/30 rounded-lg p-4 max-h-full speech-bubble-scroll"
+      className="h-full overflow-y-auto space-y-4 scroll-smooth bg-gray-800/30 rounded-lg p-4 speech-bubble-scroll"
       style={{ scrollBehavior: 'smooth' }}
     >
       {visibleMessages.map((message, index) => {

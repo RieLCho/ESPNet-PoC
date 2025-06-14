@@ -195,17 +195,6 @@ const MetaverseRoom: React.FC<MetaverseRoomProps> = ({ speakers, currentSpeaker 
       
       {/* 2D 오버레이 */}
       <div className="absolute inset-0 pointer-events-none z-10">
-        {/* 중앙 로고 */}
-        <div className="relative w-80 pt-4">
-          <div className="bg-black/30 backdrop-blur-sm rounded-full p-8 border border-white/20">
-            <h2 className="text-4xl font-bold text-white text-center mb-2">
-              🌌 MetaVerse
-            </h2>
-            <p className="text-white/70 text-center">화자 인식 공간</p>
-          </div>
-        </div>
-        
-        {/* 하단 정보 */}
         <div className="absolute bottom-6 left-6 right-6">
           <div className="flex justify-between items-center">
             <div className="bg-black/50 backdrop-blur-sm rounded-xl p-3 border border-white/20">
